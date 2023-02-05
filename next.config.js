@@ -11,7 +11,7 @@ const nextConfig = {
     domains: ['catalogo.movistar.com.pe']
   },
   webpack: (config, options) => {
-    config.experiments = { topLevelAwait: true };
+    config.experiments = { topLevelAwait: true, layers: true };
     const { isServer } = options
     config.plugins.push(
       new NextFederationPlugin({
