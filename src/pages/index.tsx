@@ -8,7 +8,6 @@ const ExampleComponent = dynamic(
 export default function Home() {
   return (
     <>
-      Hello app-main
       <ExampleComponent />
     </>
   )

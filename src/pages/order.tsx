@@ -1,11 +1,13 @@
 import dynamic from "next/dynamic";
 
-const AppOrderIndexPage = dynamic(() => import("app-order/pages/index"));
+const AppOrderIndexPage = dynamic(
+  () => import('app-order/OrderDetail'),
+  { ssr: false }
+)
 
 function OrderPage() {
   return (
     <>
-      Order page
       <AppOrderIndexPage />
     </>
   );
